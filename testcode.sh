@@ -1,4 +1,4 @@
-# this is for testing webhooks
+# This is for testing webhooks
 
 #!/bin/bash
 pwd 
