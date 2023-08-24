@@ -1,3 +1,3 @@
 x = 201
 y = 365
-print("total sum is ", x+y)
+print(x+y)
