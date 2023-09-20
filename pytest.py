@@ -1,1 +1,1 @@
-print(x+y)
+print(9+15)
