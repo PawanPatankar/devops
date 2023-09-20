@@ -17,7 +17,7 @@ pipeline {
 			steps {
 				git branch: 'main', url: 'https://github.com/PawanPatankar/devops.git'
 				sh "ls"
-				sh "cat pytest.py"
+				python3 "pytest.py"
 				
 				}
 			}
