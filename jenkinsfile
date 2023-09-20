@@ -10,7 +10,7 @@ pipeline {
 		stage('devops') {
             steps {
                 echo 'Hello aws'
-		echo 'pawan patankar'		
+		echo 'pawan patankar.'		
         }
     }
     stage("continuous-download") {
