@@ -1,0 +1,35 @@
+pipeline {
+	agent {
+		label {
+				customWorkspace "/home/ubuntu/project-jenkins"
+				}
+			}
+			
+			environment {
+							num1 = 50
+							num2 = 65
+							
+			
+			}
+			
+			
+	stages {
+		
+		stage("dir") {
+			steps {
+				echo "hello world"
+				echo "${Name}"
+				echo "${PROF}"
+				echo "${BATCH}"
+				}
+			}
+			
+		stage("continuous-download") {
+			steps {
+				git credentialsId: '774', url: 'https://github.com/sachin93094/new_devops.git'
+				sh "python3 pytest.py"
+				
+				}
+			}
+		}
+	}
