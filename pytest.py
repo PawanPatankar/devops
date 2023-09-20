@@ -1,1 +1,1 @@
-print(9+15)
+print(num1+num2)
