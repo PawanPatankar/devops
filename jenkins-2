@@ -18,9 +18,7 @@ pipeline {
 		stage("dir") {
 			steps {
 				echo "hello world"
-				echo "${Name}"
-				echo "${PROF}"
-				echo "${BATCH}"
+				echo "${num1}"
 				}
 			}
 			
