@@ -11,6 +11,7 @@ pipeline {
             steps {
                 echo 'Hello aws'
 				echo 'hello devops'
+		echo 'pawan patankar'
 				
         }
     }
