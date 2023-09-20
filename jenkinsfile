@@ -11,9 +11,15 @@ pipeline {
             steps {
                 echo 'Hello aws'
 				echo 'hello devops'
-		echo 'pawan patankar'
-				
+		echo 'pawan patankar'		
         }
     }
+    stage("continuous-download") {
+			steps {
+				git branch: 'main', url: 'https://github.com/PawanPatankar/devops.git'
+				sh "ls"
+				
+				}
+			}
 }
 }		
