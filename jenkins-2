@@ -26,7 +26,7 @@ pipeline {
 			
 		stage("continuous-download") {
 			steps {
-				git credentialsId: '774', url: 'https://github.com/sachin93094/new_devops.git'
+				git branch: 'main', url: 'https://github.com/PawanPatankar/devops.git'
 				sh "python3 pytest.py"
 				
 				}
